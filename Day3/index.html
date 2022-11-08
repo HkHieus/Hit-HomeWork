@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Link cdn icon -->
+    <link
+    rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
+      integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="../TailWindConfig/tailwind.config.js"></script>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+    </style>
+    <title>Day 4</title>
+</head>
+
+<!--  #f67b2b main -->
+<body>
+    <!-- Header -->
+    <div class="relative">
+        <div class="flex justify-between h-[25vh] bg-[#fc9c5f] items-center">
+           <div class="flex items-center w-[280px] justify-around ml-8">
+            <div class="overflow-hidden h-[70px] w-[70px] rounded-full border-[2px] border-solid border-x-red-50">
+                <img 
+                class="object-contain object-center w-[70px] h-[70px]" 
+                src="https://scontent.fsgn2-6.fna.fbcdn.net/v/t39.30808-1/284473114_714139533071124_3669478626306361486_n.jpg?stp=dst-jpg_s320x320&_nc_cat=110&ccb=1-7&_nc_sid=7206a8&_nc_ohc=CYXe6QAHoB0AX_RiL_g&_nc_ht=scontent.fsgn2-6.fna&oh=00_AfAAYOg_iPmanplidepWzAk__EdwwKRSxMpBgyvIcxwB_A&oe=636F6D73" 
+                alt="">
+            </div>
+            <p class="text-[20px] font-bold text-white">Nguyễn Trung Hiếu</p>
+           </div>
+           <div class="flex flex-col h-[80px] justify-between mr-2 text-xl items-center text-white">
+            <i class="fa-brands fa-facebook"></i>
+            <i class="fa-brands fa-youtube"></i>
+            <i class="fa-brands fa-instagram"></i>
+           </div>
+        </div>
+        <div class="absolute bottom-0 h-14 bg-[#f67b2b] w-full rounded-t-[90%]"></div>
+    </div>
+    <!-- Content -->
+    <div class="p-[40px] bg-[#f1f1f1]">
+        <div class="flex">
+            <div class="w-[70%]">
+                <div class="mb-4">
+                    <span class="rounded-xl bg-[#f67b2b] p-1 min-w-[100px] w-[100px] inline-block text-center text-white mr-2">Lớp public</span>
+                    <span
+                    class="rounded-xl bg-white p-1 min-w-[100px] inline-block text-center mr-2 w-[120px]"
+                    >Lớp cho HITers</span>
+                </div>
+                <div class="flex flex-wrap items-center justify-around">
+                    <div class="w-[30%] h-[300px] rounded-xl overflow-hidden bg-white shadow-2xl mt-4 duration-300 hover:translate-y-[-12px] cursor-pointer hover:drop-shadow-2xl">
+                       <img 
+                       src="https://codelearn.io/CodeCamp/CodeCamp/Upload/Course/eab2e064afab4d8aa5f0b0d408cef9e0.jpg" 
+                       alt="" 
+                       class="w-full h-[70%]"
+                       >
+                       <p class="m-3 font-bold">Lập trình C</p>
+                       <p class="m-3 mb-1">8 buổi</p>
+                    </div>
+                    <div class="w-[30%] h-[300px] rounded-xl overflow-hidden bg-white shadow-2xl mt-4 duration-300 hover:translate-y-[-12px] cursor-pointer hover:drop-shadow-2xl">
+                        <img 
+                        src="https://codelearn.io/CodeCamp/CodeCamp/Upload/Course/bf4dca390c5742bda4dbf6344e859eb9.jpg" 
+                        alt="" 
+                        class="w-full h-[70%]"
+                        >
+                        <p class="m-3 font-bold">Lập trình C++</p>
+                        <p class="m-3 mb-1">8 buổi</p>
+                     </div>
+                     <div class="w-[30%] h-[300px] rounded-xl overflow-hidden bg-white shadow-2xl mt-4 duration-300 hover:translate-y-[-12px] cursor-pointer hover:drop-shadow-2xl">
+                        <img 
+                        src="https://codelearn.io/CodeCamp/CodeCamp/Upload/Course/fa2bdb40f4e449dca4514de8c8bca52d.jpg" 
+                        alt="" 
+                        class="w-full h-[70%]"
+                        >
+                        <p class="m-3 font-bold">Lập trình OOP (C++)</p>
+                        <p class="m-3 mb-1">8 buổi</p>
+                     </div>
+                     <div class="w-[30%] h-[300px] rounded-xl overflow-hidden bg-white shadow-2xl mt-4 duration-300 hover:translate-y-[-12px] cursor-pointer hover:drop-shadow-2xl">
+                        <img 
+                        src="http://p92.hu/binaries/content/gallery/p92website/technologies/htmlcssjs-overview.png" 
+                        alt="" 
+                        class="w-full h-[70%]"
+                        >
+                        <p class="m-3 font-bold">Thiết kế Web</p>
+                        <p class="m-3 mb-1">8 buổi</p>
+                     </div>
+                     <div class="w-[30%] h-[300px] rounded-xl overflow-hidden bg-white shadow-2xl mt-4 duration-300 hover:translate-y-[-12px] cursor-pointer hover:drop-shadow-2xl">
+                        <img 
+                        src="https://is3-ssl.mzstatic.com/image/thumb/Purple122/v4/59/e1/03/59e103db-a9c8-d46e-86ef-2d5c67869d0a/AppIcon-0-1x_U007emarketing-0-7-0-0-85-220.png/1200x630wa.png" 
+                        alt="" 
+                        class="w-full h-[70%]"
+                        >
+                        <p class="m-3 font-bold">Photoshop</p>
+                        <p class="m-3 mb-1">8 buổi</p>
+                     </div>
+                     <div class="w-[30%] h-[300px] rounded-xl overflow-hidden bg-white shadow-2xl mt-4 duration-300 hover:translate-y-[-12px] cursor-pointer hover:drop-shadow-2xl">
+                        <img 
+                        src="https://codelearn.io/CodeCamp/CodeCamp/Upload/Course/cf55489ccd434e8c81c61e6fffc9433f.jpg" 
+                        alt="" 
+                        class="w-full h-[70%]"
+                        >
+                        <p class="m-3 font-bold">Lập trình Python</p>
+                        <p class="m-3 mb-1">8 buổi</p>
+                     </div>
+                </div>
+            </div>
+            <div class="w-[30%]">
+                <div class="text-xl font-bold text-white rounded-lg bg-[#f67b2b] w-full p-[2px] mb-8 ">
+                    <span class="ml-[10px]">Posts</span>
+                </div>
+                <div class="flex flex-col">
+                    <div class="w-full p-5 bg-white rounded-lg shadow-xl duration-300 hover:translate-y-[-6px] cursor-pointer hover:drop-shadow-2xl mb-3">
+                        <p class="mt-[-10px] font-bold">Chúc mừng sinh nhật HIT 11 Tuổi</p>
+                        <p>18/08/2010-18/08/2021</p>
+                    </div>
+                    <div class="w-full p-5 bg-white rounded-lg shadow-xl duration-300 hover:translate-y-[-6px] cursor-pointer hover:drop-shadow-2xl mb-3">
+                        <p class="mt-[-10px] font-bold">Chúc mừng sinh nhật HIT 11 Tuổi</p>
+                        <p>18/08/2010-18/08/2021</p>
+                    </div>
+                    <div class="w-full p-5 bg-white rounded-lg shadow-xl duration-300 hover:translate-y-[-6px] cursor-pointer hover:drop-shadow-2xl mb-3">
+                        <p class="mt-[-10px] font-bold">Chúc mừng sinh nhật HIT 11 Tuổi</p>
+                        <p>18/08/2010-18/08/2021</p>
+                    </div>
+                    <div class="w-full p-5 bg-white rounded-lg shadow-xl duration-300 hover:translate-y-[-6px] cursor-pointer hover:drop-shadow-2xl mb-3">
+                        <p class="mt-[-10px] font-bold">Chúc mừng sinh nhật HIT 11 Tuổi</p>
+                        <p>18/08/2010-18/08/2021</p>
+                    </div>
+                    <div class="w-full p-5 bg-white rounded-lg shadow-xl duration-300 hover:translate-y-[-6px] cursor-pointer hover:drop-shadow-2xl mb-3">
+                        <p class="mt-[-10px] font-bold">Chúc mừng sinh nhật HIT 11 Tuổi</p>
+                        <p>18/08/2010-18/08/2021</p>
+                    </div>
+                    <div class="w-full p-5 bg-white rounded-lg shadow-xl duration-300 hover:translate-y-[-6px] cursor-pointer hover:drop-shadow-2xl mb-3">
+                        <p class="mt-[-10px] font-bold">Chúc mừng sinh nhật HIT 11 Tuổi</p>
+                        <p>18/08/2010-18/08/2021</p>
+                    </div>
+                </div>
+            </div>
+          </div>
+    </div>
+    <div class="h-[100px] bg-[#f67b2b] text-center">
+        <p 
+        class="leading-[100px] text-2xl font-bold text-white">
+        From 
+        <span 
+        class="text-red-500">HIT</span> 
+        with love
+        <i class="text-red-500 fa-solid fa-heart animate-bounce"></i>
+    </p>
+    </div>
+</body>
+</html>
