@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css" integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script src="./assets/tailwind.config.js"></script>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+    html {
+      font-family: Arial, Helvetica, sans-serif;
+    }
+    li {
+      list-style-type: none;
+    }
+    input::placeholder {
+        padding-left: 10px;
+    }
+    .bg {
+        background: url('./Screenshot\ 2022-11-18\ 224912.png') top center /cover no-repeat;
+    }
+  </style>
+  <title>Document</title>
+</head>
+<!--  #6d6ddd  -->
+<body class="bg-[#6d6ddd] flex justify-center items-center flex-col h-[100vh]">
+    <p class="text-2xl text-white">LANDING PAGE TEMPLATE</p>
+    <p class="mb-4 text-lg text-white">E-learning</p>
+    <div class="w-[80%] h-[85%] shadow-xl bg-white pl-14 py-11">
+    <div class="flex justify-between">
+        <div class="flex items-center">
+            <i class="fa-solid fa-book-open text-[40px]"></i>
+            <div class="ml-2 font-bold">
+                <p class="text-[#6d6ddd]">CLASS</p>
+                <p>MATE</p>
+            </div>
+        </div>
+        <div class="flex justify-around items-center w-[70%] text-white bg-[#6d6ddd] rounded-l-3xl">
+            <li class="h-full text-center leading-[46px] border-t-[3px] border-solid border-white">Home</li>
+            <li class="h-full text-center leading-[49px] ">About</li>
+            <li class="h-full text-center leading-[49px] ">Timing</li>
+            <li class="h-full text-center leading-[49px] ">Courses</li>
+            <div class="relative text-black">
+                <input type="text" placeholder="Search" class="p-[2px] rounded-xl outline-blue-400">
+                <i class="absolute right-2 top-[8px] fa-solid fa-magnifying-glass"></i>
+            </div>
+        </div>
+    </div>
+    <div class="flex">
+      <div class="w-[40%] mt-16 text-left">
+        <p class="ml-1 text-3xl">Lets</p>
+        <h1 class="text-[70px] font-bold text-[#6d6ddd] leading-[63px]">E-learning</h1>
+        <h2 class="text-[50px] font-bold">at your home</h2>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsam obcaecati fugiat in! Ullam unde a, natus expedita temporibus, excepturi tempore eaque repellendus repellat sequi tempora rerum. Ex harum adipisci nam.</p>
+        <div class="flex mt-5">
+            <div class="w-[130px] text-center leading-[31px] font-bold h-[33px] rounded-3xl bg-violet-400 text-white">Apply now</div>
+            <div class="ml-8 w-[130px] text-center leading-[28px] font-bold h-[33px] rounded-3xl bg-white border-solid border-[2px] border-violet-500 text-gray-500">Read more</div>
+        </div>
+      </div>
+      <div class="w-[60%] bg h-[411px]"></div>
+    </div>
+    <div class="flex items-center justify-between w-full mt-2">
+       <div class="flex">
+        <span class="w-[30px] h-[30px] text-violet-500 border-solid border-[1px] border-violet-500 rounded-full flex justify-center items-center mx-1">
+            <i class="fa-brands fa-instagram"></i>
+          </span>
+          <span class="w-[30px] h-[30px] text-violet-500 border-solid border-[1px] border-violet-500 rounded-full flex justify-center items-center mx-1">
+            <i class="fa-brands fa-facebook-f"></i>
+          </span>
+          <span class="w-[30px] h-[30px] text-violet-500 border-solid border-[1px] border-violet-500 rounded-full flex justify-center items-center mx-1">
+            <i class="fa-brands fa-twitter"></i>
+          </span>
+          <span class="w-[30px] h-[30px] text-violet-500 border-solid border-[1px] border-violet-500 rounded-full flex justify-center items-center mx-1">
+            <i class="fa-solid fa-phone"></i>
+          </span>
+       </div>
+       <span class="w-[50px] h-[50px] text-white border-solid border-[1px] border-violet-500 rounded-full flex justify-center items-center mx-1 bg-violet-400 mr-3">
+        <i class="fa-regular fa-comment-dots text-[30px]"></i>
+      </span>
+    </div>
+    </div>
+</body>
+</html>
