@@ -1,10 +1,16 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css" integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css"
+      integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
     <script src="https://cdn.tailwindcss.com"></script>
     <script src="./assets/tailwind.config.js"></script>
     <style>
@@ -20,10 +26,11 @@
         list-style-type: none;
       }
       input::placeholder {
-          padding-left: 10px;
+        padding-left: 10px;
       }
       .bg {
-          background: url('https://img.freepik.com/premium-psd/coffee-cup-wooden-spoon-with-coffee-beans-background_23-2148371038.jpg?w=2000') center center /cover no-repeat;
+        background: url("https://img.freepik.com/premium-psd/coffee-cup-wooden-spoon-with-coffee-beans-background_23-2148371038.jpg?w=2000")
+          center center / cover no-repeat;
       }
       .text {
         text-shadow: 1px 1px #333;
@@ -35,172 +42,289 @@
         padding-top: 100px;
         justify-content: space-between;
         align-items: center;
+        text-align: center;
       }
       .father:hover .child {
         display: block;
       }
       .navScroll {
-        background-color: white;
-        color: black !important;
+        background-color: white!important;
         box-shadow: 1px 1px 1px 1px #ccc;
+        color: black!important;
       }
     </style>
     <title>Document</title>
-</head>
-<body class="h-[100vh]">
+  </head>
+  <body class="h-[100vh]">
     <div class="h-[100vh] w-full bg">
-       <div class="fixed flex items-center justify-between w-full px-10 h-[80px] text-2xl font-bold text-white text nav">
+      <div
+        class="fixed flex z-[1000] items-center justify-between w-full px-10 h-[80px] lg:bg-transparent text-2xl font-bold lg:text-white text nav min-[320px]:bg-white min-[320px]:text-black"
+      >
         <div>Start Bootstrap</div>
-        <ul class="flex justify-around w-[40%]">
-            <li>About</li>
-            <li>About</li>
-            <li>About</li>
-            <li>About</li>
+        <ul class="lg:flex lg:static lg:bg-transparent lg:justify-around lg:w-[40%] min-[320px]:hidden min-[320px]:absolute min-[320px]:bottom-[-280px] min-[320px]:left-0 min-[320px]:right-0 min-[320px]:bg-white min-[320px]:p-5 min-[320px]:text-lg min-[320px]:font-normal min-[320px]:border-t-[2px] nav-ul">
+          <a href="#0" class="block nav-text h-[60px] leading-[60px] hover:text-orange-400">About</a>
+          <a href="#1" class="block nav-text h-[60px] leading-[60px] hover:text-orange-400">Services</a>
+          <a href="#2" class="block nav-text h-[60px] leading-[60px] hover:text-orange-400">Portfolio</a>
+          <a href="#3" class="block nav-text h-[60px] leading-[60px] hover:text-orange-400">Contact</a>
         </ul>
-       </div>
-       <div class="flex flex-col items-center w-full pt-[150px] text-white text h-[300px] justify-around">
-          <div class="text-[50px] font-bold">Your Favorite Place for Free</div> 
-          <div class="text-[40px] font-bold">Bootstrap Themes</div>
-          <div class="h-[5px]  bg-orange-500 w-[60px]"></div>
-          <div>Start Bootstrap can help you build better websites using the Bootstrap framework! Just</div>
-          <div>download a theme and start customizing, no strings attached!</div>
-          <button class="p-4 bg-orange-500 rounded-2xl">FIND OUT MORE</button>
-       </div>
-    </div>
-    <div class="h-[400px] bg-orange-500 text-white">
-        <div class="contentSame h-[300px]">
-            <div class="text-[40px] font-bold">Bootstrap Themes</div>
-          <div class="h-[5px]  bg-white w-[60px]"></div>
-          <div>Start Bootstrap can help you build better websites using the Bootstrap framework! Just</div>
-          <div>download a theme and start customizing, no strings attached!</div>
-          <button class="p-4 text-black bg-white rounded-2xl">FIND OUT MORE</button>
+        <i class="cursor-pointer fa-solid fa-bars lg:hidden bars"></i>
+      </div>
+      <div
+        class="flex flex-col items-center w-full pt-[150px] text-white text h-[500px] justify-between text-center"
+      >
+        <div class="text-[50px] font-bold">Your Favorite Place for Free</div>
+        <div class="text-[40px] font-bold">Bootstrap Themes</div>
+        <div class="h-[5px] bg-orange-500 w-[60px]"></div>
+        <div>
+          Start Bootstrap can help you build better websites using the Bootstrap
+          framework! Just
         </div>
+        <div>download a theme and start customizing, no strings attached!</div>
+        <button class="p-4 bg-orange-500 rounded-2xl">FIND OUT MORE</button>
+      </div>
     </div>
-    <div class="h-[400px] bg-white text-black">
-        <div class="contentSame h-[300px]">
-            <div class="text-[40px] font-bold">At your service</div>
-          <div class="h-[5px]  bg-orange-500 w-[60px]"></div>
-          <div class="flex justify-around w-full mt-5">
-            <div class="flex flex-col items-center justify-between h-[100px] text-2xl">
-                <i class="fa-regular fa-gem"></i>
-                <div class="font-bold">Sturdy Themes</div> 
-                <div>Our themes are updated regularly</div>
-                <div>to keep them bug free!</div>
-            </div>
-            <div class="flex flex-col items-center justify-between h-[100px] text-2xl">
-                <i class="fa-regular fa-gem"></i>
-                <div class="font-bold">Sturdy Themes</div> 
-                <div>Our themes are updated regularly</div>
-                <div>to keep them bug free!</div>
-            </div>
-            <div class="flex flex-col items-center justify-between h-[100px] text-2xl">
-                <i class="fa-regular fa-gem"></i>
-                <div class="font-bold">Sturdy Themes</div> 
-                <div>Our themes are updated regularly</div>
-                <div>to keep them bug free!</div>
-            </div>
-            <div class="flex flex-col items-center justify-between h-[100px] text-2xl">
-                <i class="fa-regular fa-gem"></i>
-                <div class="font-bold">Sturdy Themes</div> 
-                <div>Our themes are updated regularly</div>
-                <div>to keep them bug free!</div>
-            </div>
+    <div class="h-[400px] bg-orange-500 text-white section" id="0">
+      <div class="contentSame h-[300px]">
+        <div class="text-[40px] font-bold">Bootstrap Themes</div>
+        <div class="h-[5px] bg-white w-[60px]"></div>
+        <div>
+          Start Bootstrap can help you build better websites using the Bootstrap
+          framework! Just
+        </div>
+        <div>download a theme and start customizing, no strings attached!</div>
+        <button class="p-4 text-black bg-white rounded-2xl">
+          GET STARTED!
+        </button>
+      </div>
+    </div>
+    <div class="m-h-[500px] bg-white text-black section" id="1">
+      <div class="justify-start contentSame">
+        <div class="text-[40px] font-bold">At your service</div>
+        <div class="h-[5px] bg-orange-500 w-[60px]"></div>
+        <div class="flex flex-wrap justify-around w-full mt-5">
+          <div
+            class="flex flex-col items-center justify-between md:w-[50%] lg:w-[24%] text-2xl py-10"
+          >
+            <i class="fa-regular fa-gem"></i>
+            <div class="font-bold">Sturdy Themes</div>
+            <div>Our themes are updated regularly</div>
+            <div>to keep them bug free!</div>
+          </div>
+          <div
+            class="flex flex-col items-center justify-between md:w-[50%] lg:w-[24%] text-2xl py-10"
+          >
+            <i class="fa-regular fa-gem"></i>
+            <div class="font-bold">Sturdy Themes</div>
+            <div>Our themes are updated regularly</div>
+            <div>to keep them bug free!</div>
+          </div>
+          <div
+            class="flex flex-col items-center justify-between md:w-[50%] lg:w-[24%] text-2xl py-10"
+          >
+            <i class="fa-regular fa-gem"></i>
+            <div class="font-bold">Sturdy Themes</div>
+            <div>Our themes are updated regularly</div>
+            <div>to keep them bug free!</div>
+          </div>
+          <div
+            class="flex flex-col items-center justify-between md:w-[50%] lg:w-[24%] text-2xl py-10"
+          >
+            <i class="fa-regular fa-gem"></i>
+            <div class="font-bold">Sturdy Themes</div>
+            <div>Our themes are updated regularly</div>
+            <div>to keep them bug free!</div>
           </div>
         </div>
+      </div>
     </div>
-    <div class="flex flex-wrap w-full">
-        <div class="w-[33%] bg-orange-300 h-[240px] bg border-[1px] border-solid border-white relative father">
-            <div class="hidden child">
-                <div class="absolute top-0 bottom-0 left-0 right-0 flex flex-col items-center justify-center text-white bg-orange-500 opacity-50">
-                </div>
-                <div class="absolute text-white top-[49%] left-[37%] text-center text-2xl">
-                    <div>category</div>
-                    <div>project name</div>
-                </div>
-            </div>
+    <div class="flex flex-wrap w-full section" id="2">
+      <div
+        class="min-[320px]:w-full bg-orange-300 h-[240px] bg border-[1px] border-solid border-white relative father md:w-[50%] lg:w-[33%]"
+      >
+        <div class="hidden child">
+          <div
+            class="absolute top-0 bottom-0 left-0 right-0 flex flex-col items-center justify-center text-white bg-orange-500 opacity-50"
+          ></div>
+          <div
+            class="absolute text-white top-[49%] left-[37%] text-center text-2xl"
+          >
+            <div>category</div>
+            <div>project name</div>
+          </div>
         </div>
-        <div class="w-[33%] bg-orange-300 h-[240px] bg border-[1px] border-solid border-white relative father">
-            <div class="hidden child">
-                <div class="absolute top-0 bottom-0 left-0 right-0 flex flex-col items-center justify-center text-white bg-orange-500 opacity-50">
-                </div>
-                <div class="absolute text-white top-[49%] left-[37%] text-center text-2xl">
-                    <div>category</div>
-                    <div>project name</div>
-                </div>
-            </div>
+      </div>
+      <div
+        class="min-[320px]:w-full bg-orange-300 h-[240px] bg border-[1px] border-solid border-white relative father md:w-[50%] lg:w-[33%]"
+      >
+        <div class="hidden child">
+          <div
+            class="absolute top-0 bottom-0 left-0 right-0 flex flex-col items-center justify-center text-white bg-orange-500 opacity-50"
+          ></div>
+          <div
+            class="absolute text-white top-[49%] left-[37%] text-center text-2xl"
+          >
+            <div>category</div>
+            <div>project name</div>
+          </div>
         </div>
-        <div class="w-[33%] bg-orange-300 h-[240px] bg border-[1px] border-solid border-white relative father">
-            <div class="hidden child">
-                <div class="absolute top-0 bottom-0 left-0 right-0 flex flex-col items-center justify-center text-white bg-orange-500 opacity-50">
-                </div>
-                <div class="absolute text-white top-[49%] left-[37%] text-center text-2xl">
-                    <div>category</div>
-                    <div>project name</div>
-                </div>
-            </div>
+      </div>
+      <div
+        class="min-[320px]:w-full bg-orange-300 h-[240px] bg border-[1px] border-solid border-white relative father md:w-[50%] lg:w-[33%]"
+      >
+        <div class="hidden child">
+          <div
+            class="absolute top-0 bottom-0 left-0 right-0 flex flex-col items-center justify-center text-white bg-orange-500 opacity-50"
+          ></div>
+          <div
+            class="absolute text-white top-[49%] left-[37%] text-center text-2xl"
+          >
+            <div>category</div>
+            <div>project name</div>
+          </div>
         </div>
-        <div class="w-[33%] bg-orange-300 h-[240px] bg border-[1px] border-solid border-white relative father">
-            <div class="hidden child">
-                <div class="absolute top-0 bottom-0 left-0 right-0 flex flex-col items-center justify-center text-white bg-orange-500 opacity-50">
-                </div>
-                <div class="absolute text-white top-[49%] left-[37%] text-center text-2xl">
-                    <div>category</div>
-                    <div>project name</div>
-                </div>
-            </div>
+      </div>
+      <div
+        class="min-[320px]:w-full bg-orange-300 h-[240px] bg border-[1px] border-solid border-white relative father md:w-[50%] lg:w-[33%]"
+      >
+        <div class="hidden child">
+          <div
+            class="absolute top-0 bottom-0 left-0 right-0 flex flex-col items-center justify-center text-white bg-orange-500 opacity-50"
+          ></div>
+          <div
+            class="absolute text-white top-[49%] left-[37%] text-center text-2xl"
+          >
+            <div>category</div>
+            <div>project name</div>
+          </div>
         </div>
-        <div class="w-[33%] bg-orange-300 h-[240px] bg border-[1px] border-solid border-white relative father">
-            <div class="hidden child">
-                <div class="absolute top-0 bottom-0 left-0 right-0 flex flex-col items-center justify-center text-white bg-orange-500 opacity-50">
-                </div>
-                <div class="absolute text-white top-[49%] left-[37%] text-center text-2xl">
-                    <div>category</div>
-                    <div>project name</div>
-                </div>
-            </div>
+      </div>
+      <div
+        class="min-[320px]:w-full bg-orange-300 h-[240px] bg border-[1px] border-solid border-white relative father md:w-[50%] lg:w-[33%]"
+      >
+        <div class="hidden child">
+          <div
+            class="absolute top-0 bottom-0 left-0 right-0 flex flex-col items-center justify-center text-white bg-orange-500 opacity-50"
+          ></div>
+          <div
+            class="absolute text-white top-[49%] left-[37%] text-center text-2xl"
+          >
+            <div>category</div>
+            <div>project name</div>
+          </div>
         </div>
-        <div class="w-[33%] bg-orange-300 h-[240px] bg border-[1px] border-solid border-white relative father">
-            <div class="hidden child">
-                <div class="absolute top-0 bottom-0 left-0 right-0 flex flex-col items-center justify-center text-white bg-orange-500 opacity-50">
-                </div>
-                <div class="absolute text-white top-[49%] left-[37%] text-center text-2xl">
-                    <div>category</div>
-                    <div>project name</div>
-                </div>
-            </div>
+      </div>
+      <div
+        class="min-[320px]:w-full bg-orange-300 h-[240px] bg border-[1px] border-solid border-white relative father md:w-[50%] lg:w-[33%]"
+      >
+        <div class="hidden child">
+          <div
+            class="absolute top-0 bottom-0 left-0 right-0 flex flex-col items-center justify-center text-white bg-orange-500 opacity-50"
+          ></div>
+          <div
+            class="absolute text-white top-[49%] left-[37%] text-center text-2xl"
+          >
+            <div>category</div>
+            <div>project name</div>
+          </div>
         </div>
+      </div>
     </div>
     <div class="h-[300px] bg-black text-white">
-        <div class="contentSame h-[250px]">
-            <div class="text-[40px] font-bold">Bootstrap Themes</div>
-          <button class="p-4 text-black bg-white rounded-3xl">DOWLOAD NOW</button>
-        </div>
+      <div class="contentSame h-[250px]">
+        <div class="text-[40px] font-bold">Bootstrap Themes</div>
+        <button class="p-4 text-black bg-white rounded-3xl">DOWLOAD NOW</button>
+      </div>
     </div>
-    <div class="flex justify-center w-full">
-        <div class="contentSame h-[1000px] w-[672px]">
-            <div class="text-[40px] font-bold">Bootstrap Themes</div>
-          <div class="h-[5px]  bg-orange-500 w-[60px]"></div>
-          <div>Start Bootstrap can help you build better websites using the Bootstrap framework! Just</div>
-          <div>no strings attached!</div>
-          <input type="text" class="w-full p-4 border-[1px] border-solid border-black" placeholder="Full name">
-          <input type="text" class="w-full p-4 border-[1px] border-solid border-black" placeholder="Full name">
-          <input type="text" class="w-full p-4 border-[1px] border-solid border-black" placeholder="Full name">
-          <textarea class="w-full h-[100px] border-[1px] border-solid border-black" placeholder="Message"></textarea>
-          <button class="w-full p-4 text-white bg-orange-400 rounded-2xl">Submit</button>
-          <i class="fa-solid fa-phone"></i>
-          <div class="pb-[6rem]">+1 (555) 123-4567</div>
+    <div class="flex justify-center w-full section" id="3">
+      <div class="contentSame h-[1000px] w-[672px]">
+        <div class="text-[40px] font-bold">Bootstrap Themes</div>
+        <div class="h-[5px] bg-orange-500 w-[60px]"></div>
+        <div>
+          Start Bootstrap can help you build better websites using the Bootstrap
+          framework! Just
         </div>
+        <div>no strings attached!</div>
+        <input
+          type="text"
+          class="w-full p-4 border-[1px] border-solid border-black"
+          placeholder="Full name"
+        />
+        <input
+          type="text"
+          class="w-full p-4 border-[1px] border-solid border-black"
+          placeholder="Full name"
+        />
+        <input
+          type="text"
+          class="w-full p-4 border-[1px] border-solid border-black"
+          placeholder="Full name"
+        />
+        <textarea
+          class="w-full h-[100px] border-[1px] border-solid border-black"
+          placeholder="Message"
+        ></textarea>
+        <button class="w-full p-4 text-white bg-orange-400 rounded-2xl">
+          Submit
+        </button>
+        <i class="fa-solid fa-phone"></i>
+        <div class="pb-[6rem]">+1 (555) 123-4567</div>
+      </div>
     </div>
     <script>
-        var nav = document.querySelector('.nav') ;
-        window.addEventListener("scroll",()=> {
-            if( window.scrollY != 0 ) {
-                nav.classList.add('navScroll') ;
-            }
-            else {
-                nav.classList.remove('navScroll') ;
-            }
-        })
+      var nav = document.querySelector(".nav");
+      var navUl = document.querySelector(".nav-ul")
+      var sections = document.querySelectorAll(".section");
+      var navTexts = document.querySelectorAll(".nav-text");
+      var bars = document.querySelector(".bars") ;
+      var checkNavUl = false ;
+
+      const activeNavScroll = () => {
+        nav.classList.add("navScroll");
+      };
+
+      const activeWhenGoToSection = () => {       
+        let indexTextNav ;
+        for (section of sections) {
+            let topPosition =  section.getBoundingClientRect().top + window.scrollY ;
+          if (window.scrollY > topPosition - 100 ) {
+              indexTextNav = +section.id ;
+          }
+        }
+        navTexts.forEach((navText, index) =>
+              index == indexTextNav 
+                ? navText.classList.add("text-orange-400")
+                : navText.classList.remove("text-orange-400")
+            );
+      };
+      
+      const toggleNav = () => {
+         if(checkNavUl) {
+            navUl.classList.add("min-[320px]:hidden") ;
+            checkNavUl = false ;
+         }
+         else {
+         navUl.classList.remove("min-[320px]:hidden") ;
+         checkNavUl = true ;
+         }
+      }
+
+        window.addEventListener("scroll", () => {
+          if (window.scrollY != 0) {
+            nav.classList.add("navScroll");
+            activeWhenGoToSection();
+          } else {
+            nav.classList.remove("navScroll");
+          }
+        });
+    
+      bars.addEventListener("click",() => {
+         toggleNav() ;
+      })
+
+      for( navText of navTexts ) {
+        navText.addEventListener("click",toggleNav);
+      }
+
     </script>
-</body>
+  </body>
 </html>
